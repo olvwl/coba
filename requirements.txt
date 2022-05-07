@@ -4,6 +4,7 @@
 #
 #    pip-compile requirements.in
 #
+-f https://download.pytorch.org/whl/torch_stable.html
 aiofiles==0.7.0
     # via -r requirements.in
 asgiref==3.4.1
@@ -78,7 +79,7 @@ six==1.16.0
     #   python-multipart
 starlette==0.14.2
     # via fastapi
-torch==1.9.1
+torch==1.9.1+cpu
     # via
     #   -r requirements.in
     #   torchvision
